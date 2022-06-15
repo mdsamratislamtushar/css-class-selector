@@ -1,0 +1,13 @@
+& .row{
+                & [class*="col-"]{
+                    &:last-child{
+                        #{$self}{
+                            &__item{
+                                &::after{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
